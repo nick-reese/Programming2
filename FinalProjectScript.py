@@ -172,7 +172,12 @@ if st.button('Find Out Here'):
 st.write('Please feel free to grade my assignment with the in the select box below')
 
 
-Final_Grade = st.selectbox('A', 'B', 'C', 'D')
+Final_Grade = st.selectbox('Final Grade',
+                           options= ['A', 'B', 'C', 'D'])
+
+
+st.write(f'Final Grade:', {Final_Grade})
+
 
 if Final_Grade == 'A':
     Final_Grade_label = "That is correct!"
