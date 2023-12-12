@@ -176,7 +176,7 @@ Final_Grade = st.selectbox('Final Grade',
                            options= ['A', 'B', 'C', 'D'])
 
 
-st.write(f'Final Grade:', {Final_Grade})
+
 
 
 if Final_Grade == 'A':
