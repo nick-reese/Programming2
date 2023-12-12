@@ -55,7 +55,7 @@ education = st.selectbox('Education level',
                                     'Four-year college or university degree/Bachelor’s degree (e.g., BS, BA, AB)',
                                     'Some postgraduate or professional schooling, no postgraduate degree (e.g. some graduate school)',
                                     'Postgraduate or professional degree, including master’s, doctorate, medical or law'])
-st.write(f'Euducation: {education}')
+st.write(f'Education: {education}')
 
 if education == 'Less than high school':
     education = 1
