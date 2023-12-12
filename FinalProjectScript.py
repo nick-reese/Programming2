@@ -118,7 +118,7 @@ else:
     married_label = "Single"
 
 st.write('##### Make sure the statement below matches your characteristics')
-st.write(f"You are {married_label}, that makes {income_label}, who is a {female_label}, and have {parent_label}") 
+st.write(f"You are {married_label}, that makes {income_label}, who is a {female_label}, and have {parent_label} with {education} level of education") 
 
 
 
