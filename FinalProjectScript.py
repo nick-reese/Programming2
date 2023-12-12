@@ -129,8 +129,9 @@ corr_ = ss.corr()
 #st.pyplot()
 
 # Check Box for Correlation 
+#import seaborn as sns
 #if st.checkbox("Correlation  for Variables"):
-#   sns.heatmap(corr_, annot=True, cmap='coolwarm', fmt=".2f")
+#  sns.heatmap(corr_, annot=True, cmap='coolwarm', fmt=".2f")
 #  st.pyplot()
 
 st.write('Make sure you put in all your values to see if the prediciton was correct!')
@@ -157,6 +158,8 @@ lr.fit(x_train, y_train)
 person = [age, income, education, female, parent, married]
 predicted_class = lr.predict([person])
 probs = lr.predict_proba([person])
+
+st.write('After you put in all your stats, lets see if we guessed correctly whether or not you have a LinkedIn!')
 
 if predicted_class == 1:
     predicted = (f" You have a {(probs[0][1]*100).round(2)}% chance of being a LinkedIn User")
