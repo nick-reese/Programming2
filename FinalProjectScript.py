@@ -173,7 +173,7 @@ st.write(' #### After you put in all your stats, lets see if we guessed correctl
 if predicted_class == 1:
     predicted = (f" You have a {(probs[0][1]*100).round(2)}% chance you do have a LinkedIn account")
 else:
-    predicted = (f"There is a {(probs[0][1]*100).round(2)}% chance you do not have a LinkedIn account")
+    predicted = (f"There is a {(probs[0][1]*100).round(2)}% chance you have a LinkedIn account")
 
 if st.button('Find Out Here'):
     st.write(predicted)
