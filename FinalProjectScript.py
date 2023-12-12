@@ -15,7 +15,7 @@ st.write('### Nick Reese')
 
 st.write('Here we are testing whether or not we accurately predicted if you had a LinkedIn')
 
-st.markdown('#### What Income values represent')
+st.markdown('##### What Income values represent')
 if st.button('Income Levels'):
     st.write("1 = Less than 10k a year, 2 = 10k to 20k, 3= 20k to 30k, 4= 30k to 40k, 5 = 40k to 50k, 6 = 50k to 75k, 7 = 75k to 100k, 8 = 100k to 150k, 9 = above 150k ")
 
@@ -167,7 +167,7 @@ person = [age, income, education, female, parent, married]
 predicted_class = lr.predict([person])
 probs = lr.predict_proba([person])
 
-st.write('After you put in all your stats, lets see if we guessed correctly whether or not you have a LinkedIn!')
+st.write(' #### After you put in all your stats, lets see if we guessed correctly whether or not you have a LinkedIn!')
 
 if predicted_class == 1:
     predicted = (f" You have a {(probs[0][1]*100).round(2)}% chance of being a LinkedIn User")
