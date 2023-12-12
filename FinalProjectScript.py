@@ -173,7 +173,7 @@ st.write('Please feel free to grade my assignment with the in the select box bel
 
 
 Final_Grade = st.selectbox('Final Grade',
-                           options= ['A', 'B', 'C', 'D'])
+                           options= ['A', 'B', 'C', 'D', 'F'])
 
 
 
@@ -187,5 +187,7 @@ elif Final_Grade == 'C':
     Final_Grade_label = 'Yeah you are going the wrong direction'
 elif Final_Grade == 'D':
     Final_Grade_label = "You are breaking my heart please try again"
+elif Final_Grade == 'F':
+    Final_Grade_label = 'Seriously there is only one right answer'
 
 st.write(Final_Grade_label)
