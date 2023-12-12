@@ -121,17 +121,17 @@ st.write('If you would like to see some of the max values of the dataset, check 
 if st.checkbox("Max Values"):
     st.dataframe(ss.style.highlight_max(axis=0, color='green'))
 
-st.write('### Correlation  of our Data')
-st.write("If you would like to see the correlations, please check the box")
+#st.write('### Correlation  of our Data')
+#st.write("If you would like to see the correlations, please check the box")
 
 corr_ = ss.corr()
 #sns.heatmap(corr_, annot=True, cmap='coolwarm', fmt=".2f")
 #st.pyplot()
 
 # Check Box for Correlation 
-if st.checkbox("Correlation  for Variables"):
-    sns.heatmap(corr_, annot=True, cmap='coolwarm', fmt=".2f")
-    st.pyplot()
+#if st.checkbox("Correlation  for Variables"):
+#   sns.heatmap(corr_, annot=True, cmap='coolwarm', fmt=".2f")
+#  st.pyplot()
 
 st.write('Make sure you put in all your values to see if the prediciton was correct!')
 
