@@ -178,7 +178,7 @@ else:
 if st.button('Find Out Here'):
     st.write(predicted)
 
-st.write('Please feel free to grade my assignment with the in the select box below')
+st.write(' ##### Please feel free to grade my assignment with the in the select box below')
 
 
 Final_Grade = st.selectbox('Final Grade',
