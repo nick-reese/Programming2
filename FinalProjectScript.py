@@ -13,6 +13,14 @@ from pathlib import Path
 st.title('Final Project')
 st.write('### Nick Reese')
 
+st.write('Here we are testing whether or not we accurately predicted if you had a LinkedIn')
+
+st.markdown('### What income values represent')
+if st.button('Income Levels'):
+    st.write("1 = Less than 10k a year, 2 = 10k to 20k, 3= 20k to 30k, 4= 30k to 40k, 5 = 40k to 50k, 6 = 50k to 75k, 7 = 75k to 100k, 8 = 100k to 150k, 9 = above 150k ")
+    
+
+
 s = pd.read_csv('social_media_usage.csv')
 print(s)
 
@@ -113,7 +121,7 @@ st.write(f"You are {married_label}, that makes {income_label}, who is a {female_
 
 
 
-st.write('### Now we are going to look at the Social Media Data')
+st.write('### Here is an example of the data we used to build the model')
 #Data 
 st.write(ss.head(10))
 
