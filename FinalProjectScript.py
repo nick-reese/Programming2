@@ -171,13 +171,16 @@ if st.button('Find Out Here'):
 
 st.write('Please feel free to grade my assignment with the in the select box below')
 
+
 Final_Grade = st.selectbox('A', 'B', 'C', 'D')
 
 if Final_Grade == 'A':
     Final_Grade_label = "That is correct!"
 elif Final_Grade == 'B':
-    Final_Grade_label == 'Close but try again'
+    Final_Grade_label = 'Close but try again'
 elif Final_Grade == 'C':
     Final_Grade_label = 'Yeah you are going the wrong direction'
 elif Final_Grade == 'D':
     Final_Grade_label = "You are breaking my heart please try again"
+
+st.write(Final_Grade_label)
