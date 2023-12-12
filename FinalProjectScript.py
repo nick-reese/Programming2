@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import seaborn as sns
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import classification_report, confusion_matrix
+from sklearn.metrics import classification_report, confusion_
 from sklearn import linear_model
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
@@ -121,16 +121,16 @@ st.write('If you would like to see some of the max values of the dataset, check 
 if st.checkbox("Max Values"):
     st.dataframe(ss.style.highlight_max(axis=0, color='green'))
 
-st.write('### Correlation Matrix of our Data')
+st.write('### Correlation  of our Data')
 st.write("If you would like to see the correlations, please check the box")
 import seaborn as sns
-corr_matrix = ss.corr()
-#sns.heatmap(corr_matrix, annot=True, cmap='coolwarm', fmt=".2f")
+corr_ = ss.corr()
+#sns.heatmap(corr_, annot=True, cmap='coolwarm', fmt=".2f")
 #st.pyplot()
 
-# Check Box for Correlation Matrix
-if st.checkbox("Correlation Matrix for Variables"):
-    sns.heatmap(corr_matrix, annot=True, cmap='coolwarm', fmt=".2f")
+# Check Box for Correlation 
+if st.checkbox("Correlation  for Variables"):
+    sns.heatmap(corr_, annot=True, cmap='coolwarm', fmt=".2f")
     st.pyplot()
 
 st.write('Make sure you put in all your values to see if the prediciton was correct!')
@@ -145,6 +145,8 @@ x_train, x_test, y_train, y_test = train_test_split(x,
                                                    stratify = y,
                                                    test_size = 0.2,
                                                    random_state = 987)
+
+
 
 
 
@@ -163,12 +165,4 @@ else:
 
 if st.button('Find Out Here'):
     st.write(predicted)
-
-
-
-
-st.write(Path('/home/test.log').read_text())
-st.download_button(
-    "Download file", Path('/home/test.log'.read_text(), 'test.log'
-)
 
