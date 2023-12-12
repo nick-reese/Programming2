@@ -123,7 +123,7 @@ if st.checkbox("Max Values"):
 
 st.write('### Correlation  of our Data')
 st.write("If you would like to see the correlations, please check the box")
-import seaborn as sns
+
 corr_ = ss.corr()
 #sns.heatmap(corr_, annot=True, cmap='coolwarm', fmt=".2f")
 #st.pyplot()
