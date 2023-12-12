@@ -1,14 +1,14 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import seaborn as sns
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import classification_report, confusion_
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 from sklearn import linear_model
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from pathlib import Path
-import seaborn as sns
+
 
 st.title('Final Project')
 st.write('### Nick Reese')
