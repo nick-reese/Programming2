@@ -171,9 +171,9 @@ probs = lr.predict_proba([person])
 st.write(' #### After you put in all your stats, lets see if we guessed correctly whether or not you have a LinkedIn!')
 
 if predicted_class == 1:
-    predicted = (f" You have a {(probs[0][1]*100).round(2)}% chance of being a LinkedIn User")
+    predicted = (f" You have a {(probs[0][1]*100).round(2)}% chance you do have a LinkedIn account")
 else:
-    predicted = (f"There is a {(probs[0][1]*100).round(2)}% chance of not being a LinkedIn User")
+    predicted = (f"There is a {(probs[0][1]*100).round(2)}% chance you do not have a LinkedIn account")
 
 if st.button('Find Out Here'):
     st.write(predicted)
